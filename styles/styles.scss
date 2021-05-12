@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+$clr-moderate-cyan: hsl(176, 50%, 47%);
+$clr-dark-cyan: hsl(176, 88%, 32%);
+$clr-black: hsl(0, 0%, 0%);
+$clr-dark-gray: hsl(0, 0%, 48%);
+
+$ff-commi: 'Commissioner', sans-serif;
+
+:root{
+    --fs-300: .9rem;
+    --fs-400: 1.25rem;
+    --fs-500: 1.75rem;
+    --fs-600: 1.9rem;
+    --fs-700: 2.25rem;
+}
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $ff-commi;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(/images/image-hero-mobile.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+body{
+    width: 100%;
+    background: rgb(253, 253, 253);
+}
+.hero{
+    padding: 2rem 1.5rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .card{
+        background: #fff;
+        border-radius: .5rem;
+        text-align: center;
+        padding: 2rem 1.3rem;
+        border:1px solid rgba(122, 122, 122, 0.1);
+    }
+
+    .card--1{
+        .card{
+            &__title{
+                font-size: var(--fs-400);
+                font-weight: 700;
+            }
+            &__dsc{
+                font-size: var(--fs-300);
+                color: $clr-dark-gray;
+                font-weight: 400;
+            }
+            &__btns{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+            }
+            &__btn--back{
+                background: $clr-dark-cyan;
+                color: #fff;
+                padding: 1rem 2.5rem;
+                border-radius: 2rem;
+                font-weight: 700;
+                font-size: 15px;
+                cursor: pointer;
+                border: none;
+            }
+            &__btn--refresh{
+                border-radius: 50%;
+               cursor: pointer;
+            }
+        }
+    }
+
+    .card--2{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .card{
+            &__section{
+                &__title{
+                    font-size: var(--fs-600);
+                }
+                &__dsc{
+                    color: $clr-dark-gray;
+                    font-size: var(--fs-300);
+                }
+            }
+            &__bar{
+                width: 80%;
+                height: 12px;
+                border-radius: 10px;
+                background: $clr-dark-cyan;
+            }
+        }
+    }
+
+    .card--3{
+        text-align: left;
+        .card{
+            &__title{
+                font-size: var(--fs-400);
+            }
+            &__dsc,
+            &__dsc--2{
+                font-size: var(--fs-300);
+                color: $clr-dark-gray;
+            }
+
+            &__stand{
+                border:1px solid rgba(122, 122, 122, 0.5);
+                border-radius: .5rem;
+                padding: 1rem;
+                &__header{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    &__title{
+                        font-size: var(--fs-300);
+                    }
+                    &__more{
+                        color: $clr-moderate-cyan;
+                        font-size: var(--fs-300);
+                    }
+                }
+                &__dsc{
+                    &--text{
+                        font-size: var(--fs-300);
+                        color: $clr-dark-gray;
+                    }
+                }
+                &__btns{
+                    &__p{
+                        font-size: var(--fs-600);
+                        font-weight: 700;
+                    }
+                    span{
+                        font-size: var(--fs-300);
+                        color: $clr-dark-gray;
+                    }
+                    &__btn{
+                        background: $clr-dark-cyan;
+                        color: #fff;
+                        padding: 1rem 2.5rem;
+                        border-radius: 2rem;
+                        font-weight: 700;
+                        font-size: 13px;
+                        cursor: pointer;
+                        border: none;
+                    }
+                    .disable{
+                        background: #ccc;
+                    }
+                }
+            }
+            
+        }
+    }
+    .card__stand--last{
+        h3,
+        p{
+            opacity: 0.5;
+        }
+    }
+}

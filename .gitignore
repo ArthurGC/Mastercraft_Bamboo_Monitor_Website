@@ -1,4 +1,4 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+design
+README-template.md
+README.md
+style-guide.md
