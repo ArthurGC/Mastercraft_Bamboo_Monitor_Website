@@ -15,15 +15,21 @@
 
 <body>
   <div class="hero">
-    <nav class="navbar">
+    <div class="navbar">
       <div class="navbar__logo">
         <img src="images/logo.svg" alt="crowdfund-logo">
       </div>
-
-      <div class="navbar__menu">
-        <img src="images/icon-hamburger.svg" alt="hamburger-icon">
+      <nav class="navbar__menu">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Get Started</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__hamb">
+        <img src="images/icon-hamburger.svg" alt="hamburger-icon" class="img_hamb">
       </div>
-    </nav>
+    </div>
 
     <div class="content">
 
@@ -37,6 +43,8 @@
       </div>
 
       <div class="card card--2">
+
+        <div class="car__section--flex">
         <div class="card__section">
           <h2 class="card__section__title">$89,914</h2>
           <p class="card__section__dsc">of $100,000 backed</p>
@@ -45,10 +53,12 @@
           <h2 class="card__section__title">5,007</h2>
           <p class="card__section__dsc">total backers</p>
         </div>
-        <div class="card__section">
+        <div class="card__section card__section--last">
           <h2 class="card__section__title">56</h2>
           <p class="card__section__dsc">days left</p>
         </div>
+        </div>
+
         <div class="card__bar">
         </div>
       </div>
@@ -112,6 +122,102 @@
         </div>
       </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content-thank">
+        <div class="modal-content-thank__check">
+          <img src="images/icon-check.svg" alt="">
+        </div>
+        <h2 class="modal-content-thank__title">Thanks for your support!</h2>
+        <p class="modal-content-thank__dsc">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor
+          Riser worldwide. You will get an
+          email once our campaign is completed</p>
+        <button id="close--thanks" class="modal-content-thank__btn">Got it!</button>
+      </div>
+
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal2" class="modal2">
+
+      <!-- Modal content -->
+      <div class="modal-content-back">
+        <div class="modal-content-back__header">
+          <h3 class="modal-content-back__header__title">Back this project</h3>
+          <span class="close--back">&times;</span>
+        </div>
+        <p class="modal-content-back__dsc">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the
+          world?</p>
+
+        <div class="modal-content-back__stand stand_1">
+          <input name="stand" type="radio" id="no-reward" class="modal-content-back__stand__radio"><label for="no-reward">Pledge with
+            no reward</label>
+          <p class="modal-content-back__stand__dsc">Choose to support us without a reward if you simply believe in our
+            project. As a backer,
+            you will be signed up to receive product updates via email.</p>
+          <div class="modal-content-back__stand__pledge">
+            <div class="modal-content-back__stand__btns--first">
+              <input type="email" name="" class="modal-content-back__stand__btns--first__input" placeholder="Enter an email">
+              <button class="modal-content-back__stand__btns--first__btn btn--continue">Continue</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-content-back__stand stand_2">
+          <input name="stand" type="radio" id="bamboo" class="modal-content-back__stand__radio">
+          <label for="bamboo">Bamboo Stand</label>
+          <p class="modal-content-back__stand--more">Pledge $25 or more</p>
+          <p class="modal-content-back__stand__dsc">You get an ergonomic stand made of natural bamboo. You've helped us
+            launch our promotional campaign, and
+            you’ll be added to a special Backer member list.</p>
+            <p class="modal-content-back__stand__left">101 <span>left</span></p>
+          <div class="modal-content-back__stand__pledge">
+            <p class="modal-content-back__stand__pledge__text">Enter your pledge</p>
+            <div class="modal-content-back__stand__btns">
+              <input type="number" name="" class="modal-content-back__stand__btns__input" value="25">
+              <button class="modal-content-back__stand__btns__btn btn--continue">Continue</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-content-back__stand stand_3">
+          <input name="stand" type="radio" id="black" class="modal-content-back__stand__radio"><label for="black">Black Edition
+            Stand</label>
+          <p class="modal-content-back__stand__dsc">You get a Black Special Edition computer stand and a personal thank
+            you. You’ll be added to our Backer
+            member list. Shipping is included.</p>
+          <div class="modal-content-back__stand__pledge">
+            <p class="modal-content-back__stand__pledge__text">Enter your pledge</p>
+            <div class="modal-content-back__stand__btns">
+              <input type="number" name="" class="modal-content-back__stand__btns__input" value="75">
+              <button class="modal-content-back__stand__btns__btn btn--continue">Continue</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-content-back__stand modal-content-back__stand--disable stand_4">
+          <input name="stand" type="radio" id="mahogany" class="modal-content-back__stand__radio" disabled><label for="mahogany">Mahogany
+            Special Edition</label>
+          <p class="modal-content-back__stand__dsc">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
+            personal thank you. You’ll be added
+            to our Backer member list. Shipping is included.</p>
+          <div class="modal-content-back__stand__pledge">
+            <p class="modal-content-back__stand__pledge__text">Enter your pledge</p>
+            <div class="modal-content-back__stand__btns">
+              <input type="number" name="" class="modal-content-back__stand__btns__input" value="25">
+              <button class="modal-content-back__stand__btns__btn btn--continue">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
   <!-- About
@@ -171,8 +277,10 @@
   <!-- Thanks for your support!
   Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
   an email once our campaign is completed.
-  Got it! --> -->
+  Got it! -->
 
-  <!-- Success modal end
+  <!-- Success modal end-->
+  <script src="js/app.js"></script>
 </body>
+
 </html>
