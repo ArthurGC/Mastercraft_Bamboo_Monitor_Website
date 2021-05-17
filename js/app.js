@@ -157,19 +157,19 @@ openThanks.forEach(button =>{
         localStorage.backers++;
       }else if (button.id == 'btn-2') {
         localStorage.backers++;
-        localStorage.money = localStorage.money + Number(donation[0].value);
-        localStorage.width = localStorage.width + (Number(donation[0].value))/100000;
-        localStorage.bamboo = localStorage.bamboo - 1;
+        localStorage.money = Number(localStorage.money) + Number(donation[0].value);
+        localStorage.width = Number(localStorage.width) + (Number(donation[0].value))/100000;
+        localStorage.bamboo--;
       }else if (button.id == 'btn-3') {
         localStorage.backers++;
-        localStorage.money = localStorage.money + Number(donation[1].value);
-        localStorage.width = localStorage.width + (Number(donation[1].value))/100000;
-        localStorage.black = localStorage.black - 1;
+        localStorage.money = Number(localStorage.money) + Number(donation[1].value);
+        localStorage.width = Number(localStorage.width) + (Number(donation[1].value))/100000;
+        localStorage.black--;
       }else if (button.id == 'btn-4') {
         localStorage.backers++;
-        localStorage.money = localStorage.money + Number(donation[2].value);
-        localStorage.width = localStorage.width + (Number(donation[2].value))/100000;
-        localStorage.mahogany = localStorage.mahogany - 1;
+        localStorage.money = Number(localStorage.money) + Number(donation[2].value);
+        localStorage.width = Number(localStorage.width) + (Number(donation[2].value))/100000;
+        localStorage.mahogany--;
       }
       
     })
