@@ -133,6 +133,7 @@ openThanks.forEach(button =>{
 })
 function closeThankModal() {
     modalThanks.classList.remove('active__modal');
+    setTimeout(location.reload(),200);
 }
 closeThanks.addEventListener('click', closeThankModal)
 
