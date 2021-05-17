@@ -22,7 +22,7 @@ body::before {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(/images/image-hero-mobile.jpg);
+  background: url("https://raw.githubusercontent.com/ArthurGC/crowdfunding-product-page/main/images/image-hero-mobile.jpg");
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -83,7 +83,7 @@ body {
   top: -28px;
   left: 50%;
   transform: translateX(-50%);
-  background: url(/images/logo-mastercraft.svg);
+  background: url("https://raw.githubusercontent.com/ArthurGC/crowdfunding-product-page/e0ee2115434f93e1de097bd811504456085b4c0b/images/logo-mastercraft.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -518,7 +518,7 @@ input[type=number] {
 
 @media (min-width: 520px) {
   body::before {
-    background: url(/images/image-hero-desktop.jpg);
+    background: url("https://raw.githubusercontent.com/ArthurGC/crowdfunding-product-page/main/images/image-hero-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
