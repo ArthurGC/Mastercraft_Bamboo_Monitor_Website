@@ -1,3 +1,27 @@
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  if (!localStorage.money) {
+    localStorage.money = 89914;
+  }
+  if (!localStorage.backers) {
+    localStorage.backers = 5007;
+  }
+  if (!localStorage.width) {
+    localStorage.width = 89;
+  }
+  if (!localStorage.bamboo) {
+    localStorage.bamboo = 101;
+  }
+  if (!localStorage.black) {
+    localStorage.black = 64;
+  }
+  if (!localStorage.mahogany) {
+    localStorage.mahogany = 0;
+  }
+}
+
+
 //JS for hamburguer menu
 const hamb = document.querySelector('.navbar__hamb');
 const menu = document.querySelector('.navbar__menu');
@@ -74,6 +98,13 @@ radioBtns.forEach(button =>{
 const backBtn = document.querySelector('.card__btn--back');
 const backModal = document.querySelector('.modal2');
 const closeBackBtn = document.querySelector('.close--back')
+
+const selectReward = document.querySelectorAll('.card__stand__btns__btn');
+
+selectReward.forEach(button =>{
+  button.addEventListener('click', openBackModal);
+})
+
 function openBackModal() {
     backModal.classList.add('active__modal');
 }
@@ -117,3 +148,54 @@ window.onclick = function(event) {
     radioBtns.forEach(button => button.checked = false)
   }
 }
+
+//JS for localStorage values and Update them
+let donation = document.querySelectorAll('.modal-content-back__stand__btns__input') 
+openThanks.forEach(button =>{
+    button.addEventListener('click', function(){
+      if (button.id == 'btn-1') {
+        localStorage.backers++;
+      }else if (button.id == 'btn-2') {
+        localStorage.backers++;
+        localStorage.money = localStorage.money + donation[0].nodeValue;
+        localStorage.width = localStorage.width + (donation[0].nodeValue)/100000;
+        localStorage.bamboo = localStorage.bamboo - 1;
+      }else if (button.id == 'btn-3') {
+        localStorage.backers++;
+        localStorage.money = localStorage.money + donation[1].nodeValue;
+        localStorage.width = localStorage.width + (donation[1].nodeValue)/100000;
+        localStorage.black = localStorage.black - 1;
+      }else if (button.id == 'btn-4') {
+        localStorage.backers++;
+        localStorage.money = localStorage.money + donation[2].nodeValue;
+        localStorage.width = localStorage.width + (donation[2].nodeValue)/100000;
+        localStorage.mahogany = localStorage.mahogany - 1;
+      }
+      
+    })
+})
+
+
+
+const moneyTitle = document.querySelector('.money');
+const backersTitle = document.querySelector('.backers');
+const bar = document.querySelector('.card__bar');
+const amountLeftBamboo = document.querySelector('.left-1');
+const amountLeftBlack = document.querySelector('.left-2');
+const amountLeftMahogany = document.querySelector('.left-3');
+const amountLeftBambooStand = document.querySelector('.left--1');
+const amountLeftBlackStand = document.querySelector('.left--2');
+const amountLeftMahoganyStand = document.querySelector('.left--3');
+
+
+moneyTitle.textContent = `$${localStorage.money}`;
+backersTitle.textContent = localStorage.backers;
+bar.style.width = `${localStorage.width}%`;
+amountLeftBamboo.innerHTML = `${localStorage.bamboo} <span>left</span>`;
+amountLeftBlack.innerHTML = `${localStorage.black} <span>left</span>`;
+amountLeftMahogany.innerHTML = `${localStorage.mahogany} <span>left</span>`;
+amountLeftBambooStand.innerHTML = `${localStorage.bamboo} <span>left</span>`;
+amountLeftBlackStand.innerHTML = `${localStorage.black} <span>left</span>`;
+amountLeftMahoganyStand.innerHTML = `${localStorage.mahogany} <span>left</span>`;
+
+
