@@ -157,18 +157,18 @@ openThanks.forEach(button =>{
         localStorage.backers++;
       }else if (button.id == 'btn-2') {
         localStorage.backers++;
-        localStorage.money = localStorage.money + donation[0].nodeValue;
-        localStorage.width = localStorage.width + (donation[0].nodeValue)/100000;
+        localStorage.money = localStorage.money + donation[0].value;
+        localStorage.width = localStorage.width + (donation[0].value)/100000;
         localStorage.bamboo = localStorage.bamboo - 1;
       }else if (button.id == 'btn-3') {
         localStorage.backers++;
-        localStorage.money = localStorage.money + donation[1].nodeValue;
-        localStorage.width = localStorage.width + (donation[1].nodeValue)/100000;
+        localStorage.money = localStorage.money + donation[1].value;
+        localStorage.width = localStorage.width + (donation[1].value)/100000;
         localStorage.black = localStorage.black - 1;
       }else if (button.id == 'btn-4') {
         localStorage.backers++;
-        localStorage.money = localStorage.money + donation[2].nodeValue;
-        localStorage.width = localStorage.width + (donation[2].nodeValue)/100000;
+        localStorage.money = localStorage.money + donation[2].value;
+        localStorage.width = localStorage.width + (donation[2].value)/100000;
         localStorage.mahogany = localStorage.mahogany - 1;
       }
       
