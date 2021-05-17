@@ -21,7 +21,7 @@
       </div>
       <nav class="navbar__menu">
         <ul>
-          <li><a href="#">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#">Discover</a></li>
           <li><a href="#">Get Started</a></li>
         </ul>
@@ -46,11 +46,11 @@
 
         <div class="car__section--flex">
         <div class="card__section">
-          <h2 class="card__section__title">$89,914</h2>
-          <p class="card__section__dsc">of $100,000 backed</p>
+          <h2 class="card__section__title money"></h2>
+          <p class="card__section__dsc">of $100000 backed</p>
         </div>
         <div class="card__section">
-          <h2 class="card__section__title">5,007</h2>
+          <h2 class="card__section__title backers"></h2>
           <p class="card__section__dsc">total backers</p>
         </div>
         <div class="card__section card__section--last">
@@ -64,7 +64,7 @@
       </div>
       <div class="card card--3">
 
-        <h2 class="card__title">About this project</h2>
+        <h2 id="about" class="card__title">About this project</h2>
         <p class="card__dsc">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your
           screen
           to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
@@ -84,8 +84,8 @@
               you’ll be added to a special Backer member list.</p>
           </div>
           <div class="card__stand__btns">
-            <p class="card__stand__btns__p">101 <span>left</span></p>
-            <button class="card__stand__btns__btn">Select Reward</button>
+            <p class="card__stand__btns__p left--1"></p>
+            <button id="reward-1" class="card__stand__btns__btn">Select Reward</button>
           </div>
         </div>
 
@@ -100,8 +100,8 @@
               member list. Shipping is included.</p>
           </div>
           <div class="card__stand__btns">
-            <p class="card__stand__btns__p">64 <span>left</span></p>
-            <button class="card__stand__btns__btn">Select Reward</button>
+            <p class="card__stand__btns__p left--2"></p>
+            <button id="reward-2" class="card__stand__btns__btn">Select Reward</button>
           </div>
         </div>
 
@@ -116,8 +116,8 @@
               to our Backer member list. Shipping is included.</p>
           </div>
           <div class="card__stand__btns">
-            <p class="card__stand__btns__p">0 <span>left</span></p>
-            <button class="card__stand__btns__btn disable">Out of Stock</button>
+            <p class="card__stand__btns__p left--3"></p>
+            <button id="reward-3" class="card__stand__btns__btn disable">Out of Stock</button>
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@
         <h2 class="modal-content-thank__title">Thanks for your support!</h2>
         <p class="modal-content-thank__dsc">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor
           Riser worldwide. You will get an
-          email once our campaign is completed</p>
+          email once our campaign is completed.</p>
         <button id="close--thanks" class="modal-content-thank__btn">Got it!</button>
       </div>
 
@@ -163,7 +163,7 @@
           <div class="modal-content-back__stand__pledge">
             <div class="modal-content-back__stand__btns--first">
               <input type="email" name="" class="modal-content-back__stand__btns--first__input" placeholder="Enter an email">
-              <button class="modal-content-back__stand__btns--first__btn btn--continue">Continue</button>
+              <button id="btn-1" class="modal-content-back__stand__btns--first__btn btn--continue">Continue</button>
             </div>
           </div>
         </div>
@@ -175,12 +175,12 @@
           <p class="modal-content-back__stand__dsc">You get an ergonomic stand made of natural bamboo. You've helped us
             launch our promotional campaign, and
             you’ll be added to a special Backer member list.</p>
-            <p class="modal-content-back__stand__left">101 <span>left</span></p>
+            <p class="modal-content-back__stand__left left-1"></p>
           <div class="modal-content-back__stand__pledge">
             <p class="modal-content-back__stand__pledge__text">Enter your pledge</p>
             <div class="modal-content-back__stand__btns">
-              <input type="number" name="" class="modal-content-back__stand__btns__input" value="25">
-              <button class="modal-content-back__stand__btns__btn btn--continue">Continue</button>
+              <input type="number" name="" class="modal-content-back__stand__btns__input" value="25" min="25" max="9999">
+              <button id="btn-2" class="modal-content-back__stand__btns__btn btn--continue">Continue</button>
             </div>
           </div>
         </div>
@@ -191,11 +191,12 @@
           <p class="modal-content-back__stand__dsc">You get a Black Special Edition computer stand and a personal thank
             you. You’ll be added to our Backer
             member list. Shipping is included.</p>
+            <p class="modal-content-back__stand__left left-2"></p>
           <div class="modal-content-back__stand__pledge">
             <p class="modal-content-back__stand__pledge__text">Enter your pledge</p>
             <div class="modal-content-back__stand__btns">
-              <input type="number" name="" class="modal-content-back__stand__btns__input" value="75">
-              <button class="modal-content-back__stand__btns__btn btn--continue">Continue</button>
+              <input type="number" name="" class="modal-content-back__stand__btns__input" value="75" min="75" max="9999">
+              <button id="btn-3" class="modal-content-back__stand__btns__btn btn--continue">Continue</button>
             </div>
           </div>
         </div>
@@ -206,11 +207,12 @@
           <p class="modal-content-back__stand__dsc">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
             personal thank you. You’ll be added
             to our Backer member list. Shipping is included.</p>
+            <p class="modal-content-back__stand__left left-3"></p>
           <div class="modal-content-back__stand__pledge">
             <p class="modal-content-back__stand__pledge__text">Enter your pledge</p>
             <div class="modal-content-back__stand__btns">
-              <input type="number" name="" class="modal-content-back__stand__btns__input" value="25">
-              <button class="modal-content-back__stand__btns__btn btn--continue">Continue</button>
+              <input type="number" name="" class="modal-content-back__stand__btns__input" value="25" min="25" max="9999">
+              <button id="btn-4" class="modal-content-back__stand__btns__btn btn--continue">Continue</button>
             </div>
           </div>
         </div>
