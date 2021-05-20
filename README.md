@@ -6,7 +6,6 @@ This is a solution to the [Crowdfunding product page challenge on Frontend Mento
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -29,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://arthurgc.github.io/crowdfunding-product-page/)
+- Live Site URL: [Preview Live Here](https://arthurgc.github.io/crowdfunding-product-page/)
 
 ## My process
 
