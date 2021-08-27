@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Preview Live Here](https://arthurgc.github.io/crowdfunding-product-page/)
+- Live Site URL: [Preview Live Here](https://arthurgc.github.io/Mastercraft_Bamboo_Monitor_Website/)
 ## My process
 
 ### Built with
