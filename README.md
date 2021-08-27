@@ -26,10 +26,12 @@ Users should be able to:
 - See the number of total backers increment by one after confirming a pledge
 - Toggle whether or not the product is bookmarked
 
+### Screenshot
+![Mastercraft Preview](/images/Mastercraft_preview.png)
+
 ### Links
 
 - Live Site URL: [Preview Live Here](https://arthurgc.github.io/crowdfunding-product-page/)
-
 ## My process
 
 ### Built with
